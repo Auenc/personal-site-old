@@ -1,0 +1,29 @@
+<form method="post"  class="resource-update-form">
+
+       <section class="actions padded">
+           <input type="submit" class="button" value="Save">
+           <a class="button grey" href="javascript:history.back()">Cancel</a>
+       </section>
+
+       <section class="inline-fields padded">
+       {{ select "Status" "status" .project.Status .project.StatusOptions }}
+       {{ field "project Name" "name" .project.Name }}
+       {{field "project Image" "image" .project.Image}}
+       Banner: <input type="checkbox" name="banner" />
+       </section>
+
+       <section class="wide-fields padded">
+       {{ field "project Summary" "summary" .project.Summary }}
+       </section>
+
+
+
+       <section class="project-content">
+           <label>Project Content</label>
+           {{ template "lib/editable/views/editable-toolbar.html.got"}}
+           <textarea name="text" class="content-textarea" id="project-content-textarea">{{.project.Description}}</textarea>
+           <div contenteditable class="content-editable" id="project-content-editable">{{html .project.Description}}</div>
+        </section>
+
+
+</form>

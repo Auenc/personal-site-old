@@ -1,0 +1,4 @@
+<section class="padded">
+<h1>Create Project</h1>
+{{ template "projects/views/form.html.got" . }}
+</section>

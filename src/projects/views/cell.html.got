@@ -1,0 +1,12 @@
+{{if .project.Id}}
+
+  <div class="col-sm-4 col-md-3 ">
+          <img src="/assets/images/projects/{{.project.Image}}.screen.png" alt="" class="img-responsive center-block">
+
+
+        <a class="project-title" href="/projects/{{.project.Id}}"><h4 class="center">{{.project.Name}}</h4></a>
+
+  </div>
+{{else}}
+orange
+{{end}}

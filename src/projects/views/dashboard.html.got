@@ -1,0 +1,22 @@
+<section class="padded">
+<h1>Projects</h1>
+
+<div class="row">
+<form accept-charset="UTF-8" action="/projects" method="get" class="filter-form">
+      <a class="button" href="/projects/create">Add Project</a>
+      <input type="search" name="filter" class="right" placeholder="Search..." value="{{ .filter }}">
+</form>
+</div>
+
+<div class="row">
+<table class="data-table">
+    {{ $0 := . }}
+    {{ template "projects/views/row.html.got" empty }}
+    {{ range $i,$m := .projects }}
+       {{ set $0 "i" $i }}
+       {{ set $0 "project" $m }}
+       {{ template "projects/views/row.html.got" $0 }}
+    {{ end }}
+</table>
+</div>
+</section>
