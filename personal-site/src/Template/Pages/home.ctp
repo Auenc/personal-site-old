@@ -50,7 +50,7 @@ $this->assign("title", "Lewis Campbell");
       <?php endforeach; ?>
       </div>
       <br />
-        <a href="/projects" class="button pull-right">All projects</a>
+        <a href="/project/all" class="button pull-right">All projects</a>
     </div>
 
 
