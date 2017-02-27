@@ -42,7 +42,9 @@ $this->end();
     <?php
     echo $this->Form->input('title');
     echo $this->Form->input('description');
+    echo $this->Form->input('image');
     echo $this->Form->input('published');
+    echo $this->Form->input('banner');
     ?>
 </fieldset>
 <?= $this->Form->button(__("Save")); ?>

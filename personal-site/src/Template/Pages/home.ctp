@@ -65,17 +65,15 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     </div>
     <div class="container-fluid">
       <div class="row no-space projects">
-    <!--  {{ $0 := . }}
-      {{ range $i,$m := .projects }}
-         {{ set $0 "i" $i }}
-         {{ set $0 "project" $m }}
-         {{ template "projects/views/cell.html.got" $0 }}
-      {{ end }} -->
-      </div>
+        <?php foreach($projects as $project): ?>
+         <div class="col-sm-4 col-md-3 ">
+          <img src="/img/projects/<?= $project->image?>.screen.png" alt="" class="img-responsive center-block">
+          <a class="project-title" href="/projects/{{.project.Id}}"><h4 class="center"><?= $project->title?></h4></a>
+        </div>
+      <?php endforeach; ?>
       <br />
         <a href="/projects" class="button pull-right">All projects</a>
-
-
+      </div>
     </div>
 
 
@@ -161,7 +159,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <div class="col-md-12">
           <h2 class="heading">Contact</h2>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <form id="contact-form" method="post" action="contact.php" class="contact-form form">
                 <div class="controls">
                   <div class="row">
@@ -192,19 +190,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 </div>
               </form>
             </div>
-            <div class="col-md-6">
-              <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-              <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-              <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </form>
   </section>
-
-  <div id="map"></div>
-
 </body>
 </html>

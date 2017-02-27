@@ -29,6 +29,11 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
 
+  public function initialize(){
+    parent::initialize();
+    $this->loadModel('Project');
+  }
+
     /**
      * Displays a view
      *
@@ -56,7 +61,8 @@ class PagesController extends AppController
             $subpage = $path[1];
         }
         if($page == "home"){
-          
+          $projects = $this->Project->find()->where(["banner" => true])->all();
+          $this->set(compact("projects"));
         }
         $this->set(compact('page', 'subpage'));
 
