@@ -1,8 +1,0 @@
-{{ style "style.default" }}
-{{ style "app" }}
-
-{{script "jquery.min"}}
-{{ script "front" }}
-{{ script "ekko-lightbox" }}
-{{ script "jquery.cookie" }}
-{{ script "app" }}
