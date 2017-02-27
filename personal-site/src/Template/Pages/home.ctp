@@ -127,7 +127,7 @@ $this->assign("title", "Lewis Campbell");
       </div>
     </div>
   </section>
-  <!--   *** CUSTOMERS ***-->
+  
   <hr />
   <section id="contact">
     <form  action="/contact/add" method="post" class="contact-form form">
