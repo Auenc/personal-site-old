@@ -71,9 +71,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
           <a class="project-title" href="/projects/{{.project.Id}}"><h4 class="center"><?= $project->title?></h4></a>
         </div>
       <?php endforeach; ?>
+      </div>
       <br />
         <a href="/projects" class="button pull-right">All projects</a>
-      </div>
     </div>
 
 
