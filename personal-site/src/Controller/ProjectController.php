@@ -24,6 +24,13 @@ class ProjectController extends AppController
         $this->set('_serialize', ['project']);
     }
 
+    public function all(){
+      $project = $this->paginate($this->Project);
+
+      $this->set(compact('project'));
+      $this->set('_serialize', ['project']);
+    }
+
     /**
      * View method
      *
