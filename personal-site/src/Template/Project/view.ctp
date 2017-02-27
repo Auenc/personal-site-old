@@ -1,6 +1,4 @@
 <?php
-$this->extend('../Layout/TwitterBootstrap/dashboard');
-
 
 $this->start('tb_actions');
 ?>
@@ -22,28 +20,20 @@ $this->start('tb_sidebar');
 <?php
 $this->end();
 ?>
-<div class="panel panel-default">
-    <!-- Panel header -->
-    <div class="panel-heading">
-        <h3 class="panel-title"><?= h($project->title) ?></h3>
+<div class="container">
+  <div class="row">
+    <img src="/webroot/img/projects/<?=$project->image?>.png" class="img-responsive img-rounded project-image center-block" alt="<?= $project->title?>" />
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="pull-left"><?= $project->title?></h2>
+      <br class="clear" />
     </div>
-    <table class="table table-striped" cellpadding="0" cellspacing="0">
-        <tr>
-            <td><?= __('Title') ?></td>
-            <td><?= h($project->title) ?></td>
-        </tr>
-        <tr>
-            <td><?= __('Id') ?></td>
-            <td><?= $this->Number->format($project->id) ?></td>
-        </tr>
-        <tr>
-            <td><?= __('Published') ?></td>
-            <td><?= $project->published ? __('Yes') : __('No'); ?></td>
-        </tr>
-        <tr>
-            <td><?= __('Description') ?></td>
-            <td><?= $this->Text->autoParagraph(h($project->description)); ?></td>
-        </tr>
-    </table>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p><?=$project->description?></p>
+      <br class="clear" />
+    </div>
+  </div>
 </div>
-

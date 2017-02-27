@@ -68,7 +68,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <?php foreach($projects as $project): ?>
          <div class="col-sm-4 col-md-3 ">
           <img src="/img/projects/<?= $project->image?>.screen.png" alt="" class="img-responsive center-block">
-          <a class="project-title" href="/projects/{{.project.Id}}"><h4 class="center"><?= $project->title?></h4></a>
+          <a class="project-title" href="/project/view/<?= $project->id ?>"><h4 class="center"><?= $project->title?></h4></a>
         </div>
       <?php endforeach; ?>
       </div>
