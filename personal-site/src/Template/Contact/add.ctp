@@ -7,7 +7,7 @@
 
 <?= $this->Form->create($contact); ?>
 <fieldset>
-    <legend><?= __('Add {0}', ['Contact']) ?></legend>
+    <legend><?= __('Leave a message') ?></legend>
     <?php
     echo $this->Form->input('email');
     echo $this->Form->input('firstname');

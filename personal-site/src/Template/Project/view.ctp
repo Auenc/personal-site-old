@@ -1,24 +1,5 @@
 <?php
-
-$this->start('tb_actions');
-?>
-<li><?= $this->Html->link(__('Edit Project'), ['action' => 'edit', $project->id]) ?> </li>
-<li><?= $this->Form->postLink(__('Delete Project'), ['action' => 'delete', $project->id], ['confirm' => __('Are you sure you want to delete # {0}?', $project->id)]) ?> </li>
-<li><?= $this->Html->link(__('List Project'), ['action' => 'index']) ?> </li>
-<li><?= $this->Html->link(__('New Project'), ['action' => 'add']) ?> </li>
-<?php
-$this->end();
-
-$this->start('tb_sidebar');
-?>
-<ul class="nav nav-sidebar">
-<li><?= $this->Html->link(__('Edit Project'), ['action' => 'edit', $project->id]) ?> </li>
-<li><?= $this->Form->postLink(__('Delete Project'), ['action' => 'delete', $project->id], ['confirm' => __('Are you sure you want to delete # {0}?', $project->id)]) ?> </li>
-<li><?= $this->Html->link(__('List Project'), ['action' => 'index']) ?> </li>
-<li><?= $this->Html->link(__('New Project'), ['action' => 'add']) ?> </li>
-</ul>
-<?php
-$this->end();
+$this->assign("title", $project->title . "| Lewis Campbell");
 ?>
 <div class="container">
   <div class="row">

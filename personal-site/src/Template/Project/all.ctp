@@ -3,9 +3,10 @@
 
 
 ?>
+<fieldset>
 
-<h2 class="pull-left">All Projects</h2>
-<br class="clear" />
+<legend>All Projects</h2>
+</fieldset>
 <div class="row no-space projects">
   <?php foreach($project as $project): ?>
    <div class="col-sm-4 col-md-3 ">
