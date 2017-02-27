@@ -50,8 +50,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
       <nav>
       <ul>
         <li><a href="/">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/project/all">Projects</a></li>
+        <li><a href="/contact/add">Contact</a></li>
       </ul>
     </nav>
     </header>
