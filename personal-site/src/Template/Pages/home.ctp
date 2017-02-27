@@ -49,7 +49,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-10">
-          <h1>I'm <span class="text-primary">Lewis Campbell</span>,<br /> a <span class="text-primary">Software Engineer</span></h1>
+          <h1>I'm <span class="text-primary">Lewis Campbell</span>,<br /> <span class="text-primary">Software Engineer</span></h1>
         </div>
       </div>
     </div>
