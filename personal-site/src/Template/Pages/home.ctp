@@ -153,14 +153,12 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
   <!--   *** CUSTOMERS ***-->
   <hr />
   <section id="contact">
-    <form  action="/contact/add" method="post">
+    <form  action="/contact/add" method="post" class="contact-form form">
     <div class="container clearfix">
-      <div class="row">
-        <div class="col-md-12">
           <h2 class="heading">Contact</h2>
           <div class="row">
-            <div class="col-md-12">
-              <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+            <div class="col-sm-12">
+
                 <div class="controls">
                   <div class="row">
                     <div class="col-sm-6">
@@ -185,14 +183,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                     <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                   </div>
                   <div class="text-center">
-                    <input type="submit" value="Send message" class="btn btn-primary btn-block">
+                    <input type="submit" value="Send" class="btn btn-primary btn-block btn-responsive">
                   </div>
                 </div>
-              </form>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   </form>
   </section>
