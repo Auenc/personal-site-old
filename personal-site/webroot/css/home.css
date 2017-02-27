@@ -152,7 +152,7 @@ ul.inline, nav ul {
 ul.inline li, nav ul li {
   display: inline-block;
   white-space: nowrap;
-  padding:0 2rem;
+  padding:0 1rem;
   margin:0 0 0.2rem 0;
 }
 
