@@ -1,5 +1,5 @@
 <?php
-$this->assign("title", $project->title . "| Lewis Campbell");
+$this->assign("title", $project->title . " | Lewis Campbell");
 ?>
 <div class="container">
   <div class="row">
