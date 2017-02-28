@@ -878,6 +878,7 @@ section.narrow {
 }
 .projects div{
     padding:15px;
+    max-height:342px;
 }
 
 
